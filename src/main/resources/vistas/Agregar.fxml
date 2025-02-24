@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="483.0" vgap="14.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+  <columnConstraints>
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="163.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="350.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Agregar registro" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label text="Nombre:" GridPane.rowIndex="1" />
+      <Label text="Apellido:" GridPane.rowIndex="2" />
+      <Label text="Sexo:" GridPane.rowIndex="3" />
+      <Label text="Fecha de nacimiento:" GridPane.rowIndex="4" />
+      <Label text="Rol:" GridPane.rowIndex="5" />
+      <TextField fx:id="txtNombre" prefHeight="25.0" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="txtApellido" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="14.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <RadioButton fx:id="radSexoH" mnemonicParsing="false" text="Hombre">
+               <toggleGroup>
+                  <ToggleGroup fx:id="radSexo" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radSexoM" mnemonicParsing="false" text="Mujer" toggleGroup="$radSexo" />
+            <RadioButton fx:id="radSexoO" mnemonicParsing="false" text="Otro" toggleGroup="$radSexo" />
+         </children>
+      </HBox>
+      <DatePicker fx:id="txtFecha" prefHeight="25.0" prefWidth="399.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ComboBox fx:id="cmbRol" prefHeight="25.0" prefWidth="444.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="14.0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="btnAgregar" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Guardar" />
+            <Button fx:id="btnRegresar" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Regresar" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+   </padding>
+</GridPane>

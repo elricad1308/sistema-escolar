@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>mx.uacam.fi</groupId>
-    <artifactId>TipCalculator</artifactId>
+    <artifactId>Sistema Escolar</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>mx.uacam.fi.tipcalculator.TipCalculator</exec.mainClass>
+        <exec.mainClass>mx.uacam.fi.se.Main</exec.mainClass>
     </properties>
     
     <dependencies>
@@ -52,7 +52,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>mx.uacam.fi.tipcalculator.TipCalculator</mainClass>
+                    <mainClass>mx.uacam.fi.se.Main</mainClass>
                     <modulePaths>
                         <modulePath>${java.home}/lib</modulePath>
                     </modulePaths>
