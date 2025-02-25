@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane hgap="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="483.0" vgap="14.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+<GridPane hgap="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="483.0" vgap="14.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.uacam.fi.se.javafx.AgregarController">
   <columnConstraints>
     <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="163.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="350.0" />
@@ -57,7 +57,7 @@
       <HBox alignment="CENTER" prefWidth="200.0" spacing="14.0" GridPane.columnSpan="2" GridPane.rowIndex="6">
          <children>
             <Button fx:id="btnAgregar" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Guardar" />
-            <Button fx:id="btnRegresar" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Regresar" />
+            <Button fx:id="btnRegresar" mnemonicParsing="false" onMouseClicked="#onBtnRegresarClicked" prefHeight="50.0" prefWidth="150.0" text="Regresar" />
          </children>
          <opaqueInsets>
             <Insets />

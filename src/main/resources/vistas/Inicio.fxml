@@ -7,16 +7,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="391.0" spacing="14.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="391.0" spacing="14.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.uacam.fi.se.javafx.InicioController">
    <children>
       <Label text="Sistema Escolar">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btnVer" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Ver registros" />
-      <Button fx:id="btnAgregar" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Agregar registro" />
+      <Button fx:id="btnVer" mnemonicParsing="false" onMouseClicked="#onBtnVerClicked" prefHeight="40.0" prefWidth="150.0" text="Ver registros" />
+      <Button fx:id="btnAgregar" mnemonicParsing="false" onMouseClicked="#onBtnAgregarClicked" prefHeight="40.0" prefWidth="150.0" text="Agregar registro" />
       <HBox alignment="CENTER_RIGHT" prefWidth="200.0">
          <children>
             <Button fx:id="btnAcerca" mnemonicParsing="false" text="Acerca de" />
