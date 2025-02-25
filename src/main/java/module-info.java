@@ -3,6 +3,8 @@ module SistemaEscolar {
     requires javafx.controls;
     requires javafx.fxml;
     requires com.google.gson;
+    requires java.desktop;
+    requires java.logging;
 
     // Otorga permiso a las clases de JavaFX de ejecutar las clases de
     // nuestro paquete 'ejemplo'
